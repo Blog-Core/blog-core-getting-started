@@ -1,0 +1,82 @@
+begin.
+assertz(col(config,'4b440191-0f2e-439e-a06e-acd2b5d25bcb')).
+assertz(eav('4b440191-0f2e-439e-a06e-acd2b5d25bcb',name,title)).
+assertz(eav('4b440191-0f2e-439e-a06e-acd2b5d25bcb',value,'Untitled site')).
+assertz(col(migration,'c7a226d0-b706-4746-a7dd-c8bf591564d7')).
+assertz(eav('c7a226d0-b706-4746-a7dd-c8bf591564d7',description,'Inserts the initial config')).
+assertz(eav('c7a226d0-b706-4746-a7dd-c8bf591564d7',name,bc_initial_config)).
+end.
+begin.
+assertz(col(user,'606d8e98-fa7d-40a2-a416-ce1efee00bdc')).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',files,true)).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',fullname,'Admin')).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',key,'d3895d03-8d7e-4127-a6ff-3b0d3bf888dd')).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',link,"")).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',password,'15fe427d10b1a6a5ef65cfb7e35c0fd7dcf35ebd9c598b3658251a1d64ed9c67')).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',salt,'53292966-563e-48cb-ad7a-ec5376ff7592')).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',type,admin)).
+assertz(eav('606d8e98-fa7d-40a2-a416-ce1efee00bdc',username,'admin@example.com')).
+assertz(col(migration,'0aafe4e8-466e-4a7f-ae76-7738aa2fbae3')).
+assertz(eav('0aafe4e8-466e-4a7f-ae76-7738aa2fbae3',description,'Inserts the initial user')).
+assertz(eav('0aafe4e8-466e-4a7f-ae76-7738aa2fbae3',name,bc_initial_user)).
+end.
+begin.
+assertz(col(config,'4ade7e6d-1e27-4ad9-aa01-f3333a38dc5f')).
+assertz(eav('4ade7e6d-1e27-4ad9-aa01-f3333a38dc5f',name,default_language)).
+assertz(eav('4ade7e6d-1e27-4ad9-aa01-f3333a38dc5f',value,en)).
+assertz(col(migration,'e315a864-cce4-4fee-a3cd-5e2b279af16c')).
+assertz(eav('e315a864-cce4-4fee-a3cd-5e2b279af16c',description,'Adds language to posts')).
+assertz(eav('e315a864-cce4-4fee-a3cd-5e2b279af16c',name,bc_add_language)).
+end.
+begin.
+assertz(col(config,'8dab3d81-d981-4d8f-a900-5af0769ad027')).
+assertz(eav('8dab3d81-d981-4d8f-a900-5af0769ad027',name,smtp_enabled)).
+assertz(eav('8dab3d81-d981-4d8f-a900-5af0769ad027',value,false)).
+assertz(col(config,'b23ae999-a72a-435c-ad5c-83c697e73238')).
+assertz(eav('b23ae999-a72a-435c-ad5c-83c697e73238',name,smtp_host)).
+assertz(eav('b23ae999-a72a-435c-ad5c-83c697e73238',value,localhost)).
+assertz(col(config,'13b21c9f-d540-48d5-ac1d-5e71bbcc28fc')).
+assertz(eav('13b21c9f-d540-48d5-ac1d-5e71bbcc28fc',name,smtp_user)).
+assertz(eav('13b21c9f-d540-48d5-ac1d-5e71bbcc28fc',value,user)).
+assertz(col(config,'19ffd841-a82f-41dd-ab06-bb9d7382f10d')).
+assertz(eav('19ffd841-a82f-41dd-ab06-bb9d7382f10d',name,smtp_password)).
+assertz(eav('19ffd841-a82f-41dd-ab06-bb9d7382f10d',value,password)).
+assertz(col(config,'66f6f9a7-2a86-4daf-a0b7-e6b171f6b8d8')).
+assertz(eav('66f6f9a7-2a86-4daf-a0b7-e6b171f6b8d8',name,smtp_auth)).
+assertz(eav('66f6f9a7-2a86-4daf-a0b7-e6b171f6b8d8',value,login)).
+assertz(col(migration,'27d82848-dadc-4143-a4c2-8d784fff9a0f')).
+assertz(eav('27d82848-dadc-4143-a4c2-8d784fff9a0f',description,'Adds SMTP settings')).
+assertz(eav('27d82848-dadc-4143-a4c2-8d784fff9a0f',name,bc_smtp_settings)).
+end.
+begin.
+assertz(col(entry,'e26bb81e-c3ee-4402-a96e-bd183257e99b')).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',author,'606d8e98-fa7d-40a2-a416-ce1efee00bdc')).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',commenting,true)).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',content,"My first Blog-Core site.")).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',content_type,markdown)).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',date_updated,1416096000)).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',description,"")).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',html,"\n\n<p>\nMy first Blog-Core site.</p>")).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',language,"en")).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',published,false)).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',slug,about)).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',tags,[])).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',title,"About")).
+assertz(eav('e26bb81e-c3ee-4402-a96e-bd183257e99b',type,block)).
+end.
+begin.
+assertz(col(entry,'11b0a9bf-9e76-4013-ae7b-85aa5031d10d')).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',author,'606d8e98-fa7d-40a2-a416-ce1efee00bdc')).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',commenting,true)).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',content,"Test page")).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',content_type,markdown)).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',date_updated,1416096000)).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',description,"")).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',html,"\n\n<p>\nTest page</p>")).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',language,"en")).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',published,false)).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',slug,hello)).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',tags,[])).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',title,"Hello")).
+assertz(eav('11b0a9bf-9e76-4013-ae7b-85aa5031d10d',type,page)).
+end.
